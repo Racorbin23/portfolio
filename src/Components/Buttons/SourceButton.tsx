@@ -6,8 +6,6 @@ function SourceButton({ link }: { link: string }) {
       <span className="material-symbols-outlined">code</span>
       <div
         onClick={() => {
-          console.log("Checking out the source!");
-          // Redirect window to link
           window.open(link);
         }}
       >

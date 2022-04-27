@@ -21,8 +21,7 @@ function LandingPage() {
           <div
             className="contact-item"
             onClick={() => {
-              // Redirect to email
-              window.location.href = "mailto:randelcorbin@gmail.com";
+              window.open("mailto:randelcorbin@gmail.com");
             }}
           >
             Randelcorbin@gmail.com
@@ -30,7 +29,6 @@ function LandingPage() {
           <div
             className="contact-item"
             onClick={() => {
-              // Redirect to email
               window.open("https://github.com/Racorbin23");
             }}
           >
@@ -39,7 +37,6 @@ function LandingPage() {
           <div
             className="contact-item"
             onClick={() => {
-              // Redirect to email
               window.open(
                 "https://www.linkedin.com/in/randel-corbin-938709137/"
               );

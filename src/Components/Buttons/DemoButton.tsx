@@ -6,8 +6,6 @@ function DemoButton({ link }: { link: string }) {
     <div className="demo-button">
       <div
         onClick={() => {
-          console.log("Checking out the demo!");
-          // Redirect window to link
           window.open(link);
         }}
       >

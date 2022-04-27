@@ -8,6 +8,14 @@ import SourceButton from "../Buttons/SourceButton";
 const ScraperImg = require("../../image/project-data.PNG");
 const WooferImg = require("../../image/project-woofer.PNG");
 
+interface ProjectInterface {
+  name: string;
+  image: string;
+  description: string;
+  skills: string[];
+  demoLink: string;
+  sourceLink: string;
+}
 class ProjectTemplate {
   constructor(
     public name: string,
@@ -55,22 +63,8 @@ const Woofer = new ProjectTemplate(
 
 // List of all my projects
 const my_projects: any = [DataScraper, Woofer];
-console.log(my_projects);
-// Project object that stores all data
-// Load those objects to my_projects
-// Loop through those and display them
-
-interface ProjectInterface {
-  name: string;
-  image: string;
-  description: string;
-  skills: string[];
-  live_link: string;
-  source_link: string;
-}
 
 function Project({ project }: { project: ProjectInterface }) {
-  console.log(project);
   return (
     <div className="project-wrapper">
       <img className="project-img" src={project.image} alt="Project Example" />
@@ -87,8 +81,8 @@ function Project({ project }: { project: ProjectInterface }) {
           )}
         </div>
         <div className="project-button-wrapper">
-          <DemoButton link={project.live_link} />
-          <SourceButton link={project.source_link} />
+          <DemoButton link={project.demoLink} />
+          <SourceButton link={project.sourceLink} />
         </div>
       </div>
     </div>
