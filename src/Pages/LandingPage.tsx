@@ -9,8 +9,7 @@ function LandingPage() {
       <div className="landing-title">Hi, I'm Randel</div>
       <div className="landing-description">
         I am a self-taught programmer, motivated, and eager to learn with the
-        help of my peers. I pick up new concepts, and languages to quickly adapt
-        to the task at hand.
+        help of my peers.
       </div>
       <div className="landing-project-section-title">Projects</div>
       <div>
