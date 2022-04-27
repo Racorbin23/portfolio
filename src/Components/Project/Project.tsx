@@ -41,16 +41,16 @@ const DataScraper = new ProjectTemplate(
     "Express",
     "MongoDB",
   ],
-  "",
-  ""
+  "https://racorbin23.github.io/MarketSearch-Client/",
+  "https://github.com/Racorbin23/MarketSearch-Client"
 );
 const Woofer = new ProjectTemplate(
   "Woofer",
   WooferImg,
   "This was a project for school in Software Engineering class. The goal was the make a social platform where animal lovers can meet each other quickly and chat with them live. I implemented authentication as well as live chat system using Firebase. I also implemented a user profile page that allows users to view their profile and edit their information and the interaction system to find new users.",
   ["HTML5", "CSS3", "JavaScript", "React", "React Router", "Firebase"],
-  "",
-  ""
+  "https://racorbin23.github.io/Woofer/",
+  "https://github.com/Racorbin23/Woofer"
 );
 
 // List of all my projects

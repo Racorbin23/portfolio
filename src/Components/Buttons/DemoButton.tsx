@@ -8,7 +8,7 @@ function DemoButton({ link }: { link: string }) {
         onClick={() => {
           console.log("Checking out the demo!");
           // Redirect window to link
-          window.location.href = link;
+          window.open(link);
         }}
       >
         Live Demo

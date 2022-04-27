@@ -8,7 +8,7 @@ function SourceButton({ link }: { link: string }) {
         onClick={() => {
           console.log("Checking out the source!");
           // Redirect window to link
-          window.location.href = link;
+          window.open(link);
         }}
       >
         View Source
