@@ -1,0 +1,37 @@
+.demo-button,
+.source-button {
+  display: flex;
+  flex-direction: row;
+
+  transition: all 0.35s;
+
+  margin-right: 20px;
+
+  padding: 10px;
+  font-weight: 600;
+
+  color: black;
+  background-color: white;
+
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.demo-button:hover,
+.source-button:hover {
+  transform: translate(0, -2px);
+
+  color: white;
+  background-color: black;
+
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  margin-left: 4px;
+  margin-right: 4px;
+
+  align-self: center;
+  justify-self: center;
+}
