@@ -39,7 +39,7 @@ class ProjectTemplate {
 const DataScraper = new ProjectTemplate(
   "Data Scraper",
   ScraperImg,
-  "The goal of this project was to make the market data for the game NBA 2K22 easier to access. The data was scraped from the Xbox and Playstation versions of the game and stored in a database. The data was then used to create a web application that allows users to view the data without having to go to the console.",
+  "The goal of this project was to make the market data for the game NBA 2K22 easier to access. The data was scraped from the Xbox and Playstation versions of the game using Python and OpenCV then stored it in a database. The data was then used to create a web application that allows users to view the data without having to go to the console.",
   [
     "Python",
     "OpenCV",
