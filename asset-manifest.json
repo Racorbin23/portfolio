@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27f63f13.css",
-    "main.js": "/portfolio/static/js/main.1df2e8e3.js",
-    "static/media/project-data.PNG": "/portfolio/static/media/project-data.1164464a32067288a9d8.PNG",
-    "static/media/project-portfolio.png": "/portfolio/static/media/project-portfolio.66cbc4ad3113499c02f7.png",
-    "static/media/project-woofer.PNG": "/portfolio/static/media/project-woofer.935305995dc6077257aa.PNG",
-    "static/media/project-calculator.png": "/portfolio/static/media/project-calculator.1de1da5cfccdb8c4dcd5.png",
-    "index.html": "/portfolio/index.html",
-    "main.27f63f13.css.map": "/portfolio/static/css/main.27f63f13.css.map",
-    "main.1df2e8e3.js.map": "/portfolio/static/js/main.1df2e8e3.js.map"
+    "main.css": "/Portfolio/static/css/main.27f63f13.css",
+    "main.js": "/Portfolio/static/js/main.2071455f.js",
+    "static/media/project-data.PNG": "/Portfolio/static/media/project-data.1164464a32067288a9d8.PNG",
+    "static/media/project-portfolio.png": "/Portfolio/static/media/project-portfolio.66cbc4ad3113499c02f7.png",
+    "static/media/project-woofer.PNG": "/Portfolio/static/media/project-woofer.935305995dc6077257aa.PNG",
+    "static/media/project-calculator.png": "/Portfolio/static/media/project-calculator.1de1da5cfccdb8c4dcd5.png",
+    "index.html": "/Portfolio/index.html",
+    "main.27f63f13.css.map": "/Portfolio/static/css/main.27f63f13.css.map",
+    "main.2071455f.js.map": "/Portfolio/static/js/main.2071455f.js.map"
   },
   "entrypoints": [
     "static/css/main.27f63f13.css",
-    "static/js/main.1df2e8e3.js"
+    "static/js/main.2071455f.js"
   ]
 }
