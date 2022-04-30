@@ -7,6 +7,8 @@ import SourceButton from "../Buttons/SourceButton";
 
 const ScraperImg = require("../../image/project-data.PNG");
 const WooferImg = require("../../image/project-woofer.PNG");
+const CalculatorImg = require("../../image/project-calculator.png");
+const PortfolioImg = require("../../image/project-portfolio.png");
 
 interface ProjectInterface {
   name: string;
@@ -44,6 +46,7 @@ const DataScraper = new ProjectTemplate(
     "HTML5",
     "CSS3",
     "JavaScript",
+    "TypeScript",
     "React",
     "Node.js",
     "Express",
@@ -61,8 +64,26 @@ const Woofer = new ProjectTemplate(
   "https://github.com/Racorbin23/Woofer"
 );
 
+const Portfolio = new ProjectTemplate(
+  "Portfolio",
+  PortfolioImg,
+  "This is my portfolio website. It is a single page application that allows users to view my projects and contact me. It is built using React with Typescript.",
+  ["HTML5", "CSS3", "JavaScript", "React", "Typescript"],
+  "https://racorbin23.github.io/portfolio/",
+  "https://github.com/Racorbin23/portfolio"
+);
+
+const Calculator = new ProjectTemplate(
+  "Calculator",
+  CalculatorImg,
+  "This is a calculator is a remake of the iOS calculator. Its a PWA (Progressive Web App) so it can be installed on any device, even an iPad. It was made as a small project to test my skills in pure Javascript.",
+  ["HTML5", "CSS3", "JavaScript"],
+  "https://racorbin23.github.io/iOS-Calculator/",
+  "https://github.com/Racorbin23/iOS-Calculator"
+);
+
 // List of all my projects
-const my_projects: any = [DataScraper, Woofer];
+const my_projects: any = [DataScraper, Woofer, Calculator, Portfolio];
 
 function Project({ project }: { project: ProjectInterface }) {
   return (
