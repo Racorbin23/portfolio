@@ -6,6 +6,16 @@ import AllProjects from "../Components/Project/Project";
 function LandingPage() {
   return (
     <div className="landing-wrapper">
+      <div
+        className="landing-contact-link"
+        onClick={() => {
+          document
+            .getElementsByClassName("contacts-wrapper")[0]
+            .scrollIntoView();
+        }}
+      >
+        Contact Me
+      </div>
       <div className="landing-title">Hi, I'm Randel</div>
       <div className="landing-description">
         I am a self-taught programmer, motivated, and eager to learn with the
