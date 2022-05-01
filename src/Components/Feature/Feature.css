@@ -1,0 +1,23 @@
+.project-features-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.project-features-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: -5%;
+  margin-bottom: 2%;
+}
+
+.project-feature {
+  font-size: 1rem;
+  font-weight: 400;
+
+  word-spacing: 0.2rem;
+}

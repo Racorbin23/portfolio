@@ -2,6 +2,7 @@ import React from "react";
 import "./Project.css";
 
 import Skill from "../Skill/Skill";
+import Feature from "../Feature/Feature";
 import DemoButton from "../Buttons/DemoButton";
 import SourceButton from "../Buttons/SourceButton";
 
@@ -15,6 +16,7 @@ interface ProjectInterface {
   image: string;
   description: string;
   skills: string[];
+  features: string[];
   demoLink: string;
   sourceLink: string;
 }
@@ -24,6 +26,7 @@ class ProjectTemplate {
     public image: string,
     public description: string,
     public skills: string[],
+    public features: string[],
     public demoLink: string,
     public sourceLink: string
   ) {
@@ -31,6 +34,7 @@ class ProjectTemplate {
     this.image = image;
     this.description = description;
     this.skills = skills;
+    this.features = features;
     this.demoLink = demoLink;
     this.sourceLink = sourceLink;
   }
@@ -52,6 +56,15 @@ const DataScraper = new ProjectTemplate(
     "Express",
     "MongoDB",
   ],
+  [
+    "Automated scraping of data from the game using OpenCV and PyTesseract",
+    "Stored scraped data from Python script in MongoDB NoSQL Database",
+    "Created web application to access data using React with TypeScript and Node.js",
+    "Created development tools to help with testing and debugging",
+    "Deployed Front-end with Github Pages",
+    "Deployed Back-end with Heroku",
+    "Deployed Database with MongoDB Atlas",
+  ],
   "https://racorbin23.github.io/MarketSearch-Client/",
   "https://github.com/Racorbin23/MarketSearch-Client"
 );
@@ -59,7 +72,13 @@ const Woofer = new ProjectTemplate(
   "Woofer",
   WooferImg,
   "This was a project for school in Software Engineering class. The goal was the make a social platform where animal lovers can meet each other quickly and chat with them live. I implemented authentication as well as live chat system using Firebase. I also implemented a user profile page that allows users to view their profile and edit their information and the interaction system to find new users.",
-  ["HTML5", "CSS3", "JavaScript", "React", "React Router", "Firebase"],
+  ["HTML5", "CSS3", "JavaScript", "React", "React Router", "Firebase", "PWA"],
+  [
+    "Added Authentication with Firebase",
+    "Added Live Chat System for users who liked each other",
+    "Save user profile information and image to Firebase",
+    "Used React Router to navigate between pages",
+  ],
   "https://racorbin23.github.io/Woofer/",
   "https://github.com/Racorbin23/Woofer"
 );
@@ -69,6 +88,10 @@ const Portfolio = new ProjectTemplate(
   PortfolioImg,
   "This is my portfolio website. It is a single page application that allows users to view my projects and contact me. It is built using React with Typescript.",
   ["HTML5", "CSS3", "JavaScript", "React", "Typescript"],
+  [
+    "Used React with TypeScript to create single page application",
+    "Deployed with Github Pages",
+  ],
   "https://racorbin23.github.io/portfolio/",
   "https://github.com/Racorbin23/portfolio"
 );
@@ -77,7 +100,13 @@ const Calculator = new ProjectTemplate(
   "Calculator",
   CalculatorImg,
   "This is a calculator is a remake of the iOS calculator. Its a PWA (Progressive Web App) so it can be installed on any device, even an iPad. It was made as a small project to test my skills in pure Javascript.",
-  ["HTML5", "CSS3", "JavaScript"],
+  ["HTML5", "CSS3", "JavaScript", "PWA", "Responsive", "Figma"],
+  [
+    "Used pure Javascript to create the app",
+    "Added PWA functionality and accessible from most devices",
+    "Used Figma to create icons and design",
+    "Deployed with Github Pages",
+  ],
   "https://racorbin23.github.io/iOS-Calculator/",
   "https://github.com/Racorbin23/iOS-Calculator"
 );
@@ -92,6 +121,16 @@ function Project({ project }: { project: ProjectInterface }) {
       <div className="project-content">
         <div className="project-title">{project.name}</div>
         <div className="project-description">{project.description}</div>
+        <div className="project-features-wrapper">
+          <div className="project-features-title">Key Features</div>
+          {project.features !== undefined ? (
+            project.features.map((features: string, index: number) => {
+              return <Feature key={index} feature={features} />;
+            })
+          ) : (
+            <div></div>
+          )}
+        </div>
         <div className="project-skills-wrapper">
           {project.skills !== undefined ? (
             project.skills.map((skill: string, index: number) => {
