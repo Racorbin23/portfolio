@@ -9,3 +9,7 @@ I made my portfolio project to show off my projects I have made. Its made using 
 Please contact me via the live version of this
 
 https://racorbin23.github.io/portfolio/
+
+## Todo
+- Fetch project info instead of hard-coding them into the site
+
